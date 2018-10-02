@@ -1,0 +1,8 @@
+ </xs:element>
+ 	<xs:complexType name="A">   
+ 		<xs:sequence>
+ 			<xs:element name="b" type="xs:string"/>
+ 			<xs:element name="c" type="xs:string"/>       
+		</xs:sequence> 
+ 	</xs:complexType>
+ </xs:element>

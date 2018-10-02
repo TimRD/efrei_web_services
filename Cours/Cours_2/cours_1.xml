@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone = "no"  encoding="ISO-8859-1" ?> 
+<!DOCTYPE liste_CD SYSTEM "CDs.dtd">
+<CD_list>   
+	<CD>      
+		<artist type="individual">Frank Sinatra</artist>      
+		<title no_pistes="4">In The Wee Small Hours</title>      
+		<tracks>         
+			<track>In The Wee Small Hours</track>         
+			<track>Mood Indigo</track>      
+		</tracks>      
+		<price money="euro" payment="CB">12.99</price>      
+		<to_buy/>   
+	</CD>   
+	<CD></CD>
+</CD_list>

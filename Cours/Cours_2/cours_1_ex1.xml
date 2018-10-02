@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone = "no"  encoding="ISO-8859-1" ?> 
+<!DOCTYPE liste_Contact SYSTEM "Contacts.dtd">
+
+<Contact_List>
+	<Contact id='1'>
+			<nom></nom>
+			<prenom></prenom>
+			<mail>fsdfs@fsdfs.fr</mail>
+			<adresse postal='91130' num='3'> rue ...</adresse>
+			<phone type='mobile'></phone>
+	</Contact>
+
+	<Contact id='2'>
+			<nom></nom>
+			<prenom></prenom>
+			<mail>dscsdf@sfdsf.fr</mail>
+			<adresse postal='92100' num='4'> avenue ...</adresse>
+			<phone type='mobile'></phone>
+	</Contact>
+</Contact_List>

@@ -1,0 +1,18 @@
+</xs:schema>
+	<xs:element name="A" type="AType"/>
+
+	 	<xs:complexType name="A">   
+	 		<xs:sequence>
+	 			<xs:element name="B" type="xs:string" minOccurs="unbounded"/>  
+	 			<xs:element name="C" type="CType"/>
+			</xs:sequence> 
+	 	</xs:complexType>
+
+
+	 	<xs:complexType name="C">   
+	 		<xs:sequence>
+	 			<xs:element name="F" type="xs:string"/>      
+			</xs:sequence> 
+	 	</xs:complexType>
+	 	
+</xs:schema>

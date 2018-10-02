@@ -1,0 +1,21 @@
+<!ATTLIST 
+
+<!ELEMENT Contact_list  (contact*)>
+<!ELEMENT contact	    (nom, prenom, mail) >
+<!ELEMENT nom #PCDATA >
+<!ELEMENT prenom #PCDATA >
+<!ELEMENT mail #PCDATA >
+
+
+<!ATTLIST Contact
+         id      CDATA   #REQUIRED //or #IMPLIED
+>
+
+<!ATTLIST Adresse
+         postal      CDATA   #REQUIRED
+         num		 CDATA   #REQUIRED
+>
+
+<!ATTLIST phone
+		type (home|mobile)	CDATA #REQUIRED
+>

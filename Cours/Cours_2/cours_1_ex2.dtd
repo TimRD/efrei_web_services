@@ -1,0 +1,16 @@
+<!ATTLIST 
+
+<!ELEMENT Contacts (contact*)>
+<!ELEMENT Contact (fname, lname, phone*) >
+<!ELEMENT fname #PCDATA >
+<!ELEMENT lname #PCDATA >
+<!ELEMENT phone #PCDATA >
+
+
+<!ATTLIST Contact
+         id      CDATA   #REQUIRED //#IMPLIED
+>
+
+<!ATTLIST phone
+		type (home|mobile)	CDATA #REQUIRED
+>
