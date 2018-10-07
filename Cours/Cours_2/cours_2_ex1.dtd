@@ -1,10 +1,12 @@
 <!ATTLIST 
 
 <!ELEMENT Contact_list  (contact*)>
-<!ELEMENT contact	    (nom, prenom, mail) >
+<!ELEMENT contact	    (nom, prenom, mail, adresse, phone) >
 <!ELEMENT nom #PCDATA >
 <!ELEMENT prenom #PCDATA >
 <!ELEMENT mail #PCDATA >
+<!ELEMENT adresse #PCDATA >
+<!ELEMENT phone #PCDATA >
 
 
 <!ATTLIST Contact
