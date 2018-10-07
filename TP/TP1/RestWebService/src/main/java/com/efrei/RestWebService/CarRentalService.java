@@ -41,20 +41,24 @@ public class CarRentalService
 		}
 		return null;
 	}        
-
-//	@RequestMapping(value = "/cars/{plateNumber}", method = RequestMethod.DELETE)
-//	@ResponseStatus(HttpStatus.OK)    
-//	public void getBack(@PathVariable("plateNumber") String plateNumber) throws Exception
-//	{
-//		for (Car c : cars)
-//		{
-//			if (c.getPlateNumber().equals(plateNumber))
-//				
-//			
-//		}
-//		return null;
-//	}      
-
+	
+	//Fonction qui permet de mettre le boolean Rent de Car à False (utiliser plugin restclient firefox)
+	@RequestMapping(value = "/cars/{plateNumber}", method = RequestMethod.DELETE)
+	@ResponseStatus(HttpStatus.OK)    
+	public void getBack(@PathVariable("plateNumber") String plateNumber) throws Exception
+	{
+		for (Car c : cars)
+		{
+			if (c.getPlateNumber().equals(plateNumber))
+			{
+				c.setRent(false);
+				System.out.println(c.getRent());
+				break;
+			}
+		}
+	}      
+	
+	//Fonction qui permet de mettre le boolean Rent de Car à TRUE (utiliser plugin restclient firefox)
 	@RequestMapping(value = "/cars/{plateNumber}", method = RequestMethod.PUT)    
 	@ResponseStatus(HttpStatus.OK)    
 	public void rent(@PathVariable("plateNumber") String plateNumber) throws Exception
@@ -63,20 +67,24 @@ public class CarRentalService
 		{
 			if (c.getPlateNumber().equals(plateNumber))
 			{
-				c.getRent().setbegin("begin");
-				c.getRent().setend("end");
-				c.getRent().setbool(true);
+				c.setRent(true);
+				System.out.println(c.getRent());
+				break;
 			}
 		}
 	}    
 
-//	@RequestMapping(value = "/voiture/{plateNumber}", method = RequestMethod.PUT)  
-//	@ResponseStatus(HttpStatus.OK)   
-//	public void rentAndGetBack(@PathVariable("plateNumber") String plateNumber, 
-//	@RequestParam(value="rent", required = true)boolean rent) throws Exception
-//	{
-//		
-//	}
-//	
-
+	//Fonction qui permet de mettre le boolean Rent de Car à TRUE ou à FALSE en fonction du Paramètre (utiliser plugin restclient firefox)
+	//http://localhost:8080/voiture/11AA22?rent=false ou true
+	
+	@RequestMapping(value = "/voiture/{plateNumber}", method = RequestMethod.PUT)  
+	@ResponseStatus(HttpStatus.OK)   
+	public void rentAndGetBack(@PathVariable("plateNumber") String plateNumber, 
+	@RequestParam(value="rent", required = true)boolean rent) throws Exception
+	{
+		if (rent==true)
+			rent(plateNumber);
+		else
+			getBack(plateNumber);
+	}
 }

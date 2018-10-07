@@ -4,8 +4,8 @@ public class Car {
 	
 	private String plateNumber;
 	private int price;
-	private Rent rent;
-	
+	//private Rent rent;
+	private boolean rent;
 	
 	public Car() {
 		super();
@@ -15,7 +15,8 @@ public class Car {
 		super();
 		this.plateNumber = plateNumber;
 		this.price = price;
-		this.rent=new Rent();
+		//this.rent=new Rent();
+		this.rent=false;
 	}
 	
 	public String getPlateNumber() {
@@ -34,7 +35,12 @@ public class Car {
 		this.price = price;
 	}
 	
-	public Rent getRent()
+	public void setRent(boolean b)
+	{
+		this.rent=b;
+	}
+	
+	public boolean getRent()
 	{
 		return rent;
 	}
