@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE cinema SYSTEM "TP1.dtd">
+
+<cinema>
+	<movie title="Les brigades du tigre" press_rating="3/5" spectator_rating="4/5"> 
+		<kind>
+Thriller
+</kind>
+		<movie_marker>
+By Jerome Cornuau
+</movie_marker>
+		<duration>
+( 2h 5min )
+</duration>
+		<langage>
+VF (French)
+</langage>
+		<actor>
+With C. Cornillac, D. Kruger, E Baer
+</actor>
+		<year-production>
+Year: 2005 
+</year-production>
+					<description>
+						<text>
+							About the adventures of commissar Valentin and inspectors Terrasson and Pujol,
+							members of the " Brigades mobiles", special squad of the French police before
+							the first world war..
+						</text>
+						<production-time>
+							<date-list>
+								<date>
+									<Day>
+										Wednesday
+									</Day>
+									<time>
+										14:00
+									</time>
+									
+									<time>
+										16:40
+									</time>
+									
+									<time>
+										19:40
+									</time>
+									
+									<time>
+										22:10
+									</time>
+								</date>
+								<date>
+									<Day>
+										Satursday
+									</Day>
+									<time>
+										14:00
+									</time>
+									
+									<time>
+										16:40
+									</time>
+									
+									<time>
+										19:40
+									</time>
+									
+									<time>
+										22:10
+									</time>
+								</date>
+								<date>
+									<Day>
+										Tuesday
+									</Day>
+									<time>
+										14:00
+									</time>
+									<time>
+										19:40
+									</time>
+									
+									<time>
+										22:10
+									</time>
+								</date>
+								<date>
+									<Day>
+										Friday
+									</Day>
+									<time>
+										14:00
+									</time>
+									<time>
+										19:40
+									</time>
+									<time>
+										22:10
+									</time>
+								</date>
+								<date>
+									<Day>
+										Monday
+									</Day>
+									<time>
+										14:00
+									</time>																		
+									<time>
+										19:40
+									</time>
+									
+									<time>
+										22:10
+									</time>
+								</date>
+								<date>
+									<Day>
+										Thursday
+									</Day>
+									<time>
+										14:00
+									</time>
+
+									<time>
+										19:40
+									</time>
+									
+									<time>
+										22:10
+									</time>
+								</date>
+								<date>
+									<Day>
+										Sunday
+									</Day>
+									<time>
+										10:20
+									</time>
+									<time>
+										14:00
+									</time>
+									
+									<time>
+										19:40
+									</time>
+									
+									<time>
+										20:00
+									</time>
+								</date>
+							</date-list>
+
+						</production-time>
+						
+					</description>
+				</movie>			
+					
+		</movie-list>
+
+	
+	
+	
+	</week>
+
+</cinema>
+</Cinema-list>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Contact_List" type="Contact_List"/>
+	 	<xs:complexType name="Contact_List">   
+	 		<xs:sequence>
+	 			<xs:element name="Contact" type="Contact" maxOccurs="unbounded" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	 	
+	 	<xs:complexType name="Contact">   
+	 		<xs:sequence>
+	 			<xs:element name="nom" type="xs:string"/>
+	 			<xs:element name="prenom" type="xs:string" minOccurs="0"/>  
+	 			<xs:element name="mail" type="xs:string"/>  
+	 			<xs:element name="adresse" type="adresse"/> 
+	 			<xs:element name="phone" type="phone"/>
+			</xs:sequence> 
+			<xs:attribute name="id"/>
+			<xs:attribute name="indication"/>
+	 	</xs:complexType>
+	 	
+	 	<xs:complexType name="adresse">
+			 <xs:simpleContent>
+			 	<xs:extension base="xs:string">
+			 		<xs:attribute type="xs:int" name="postal"/>
+			 		<xs:attribute type="xs:byte" name="num"/>
+			 		<xs:attribute type="xs:string" name="ville"/>
+			 		<xs:attribute type="xs:string" name="pays"/>
+			 	</xs:extension>
+	                  	</xs:simpleContent>
+		</xs:complexType>
+		
+		<xs:complexType name="phone">
+			 <xs:simpleContent>
+			 	<xs:extension base="xs:string">
+			 		<xs:attribute type="xs:string" name="type" use="optional"/>
+			 	</xs:extension>
+	                  	</xs:simpleContent>
+		</xs:complexType>
+		
+</xs:schema>

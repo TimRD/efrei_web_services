@@ -1,0 +1,22 @@
+<!-- DTD created at Wed Nov 14 14:32:14 CET 2018 with EditiX. Please insert an encoding attribute header for converting any DTD  -->
+<!ELEMENT cinema	    (movie*) >
+<!ELEMENT movie 	    (duration,kind,movie_maker,actors,year_of_production,language,description* )>
+<!ELEMENT description     (text, projection_list*)>
+<!ELEMENT projection_list (days, time+)>
+
+<!ELEMENT duration (#PCDATA) >
+<!ELEMENT kind (#PCDATA)>
+<!ELEMENT movie_maker (#PCDATA) >
+<!ELEMENT actors (#PCDATA) >
+<!ELEMENT year_of_production (#PCDATA) >
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT text (#PCDATA) >
+<!ELEMENT days (#PCDATA) >
+<!ELEMENT time (#PCDATA) >
+
+
+<!ATTLIST movie
+         tittle      CDATA   #REQUIRED
+         press_rating  CDATA  #IMPLIED
+         spectator_rating CDATA #IMPLIED
+>

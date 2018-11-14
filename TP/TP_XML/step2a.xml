@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Contact_List xsi:noNamespaceSchemaLocation="step2b.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Contact id='1' indication='person'>
+		<nom></nom>
+		<prenom></prenom>
+		<mail>fsdfs@fsdfs.fr</mail>
+		<adresse postal='91130' num='3' ville='Boulogne' pays='France'> rue</adresse>
+		<phone type='mobile'></phone>
+	</Contact>
+	
+	<Contact id='2' indication='company'>
+		<nom></nom>
+		<mail>dscsdf@sfdsf.fr</mail>
+		<adresse postal='92100' num='4' ville='Boulogne' pays='France'> avenue ...</adresse>
+		<phone type='mobile'></phone>
+	</Contact>
+</Contact_List>
