@@ -1,168 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!DOCTYPE cinema SYSTEM "step1a.dtd">
 
-<!DOCTYPE cinema SYSTEM "TP1.dtd">
 
 <cinema>
 	<movie title="Les brigades du tigre" press_rating="3/5" spectator_rating="4/5"> 
-		<kind>
-Thriller
-</kind>
-		<movie_marker>
-By Jerome Cornuau
-</movie_marker>
 		<duration>
 ( 2h 5min )
 </duration>
-		<langage>
-VF (French)
-</langage>
-		<actor>
+		<kind>
+Thriller
+</kind>
+		<movie_maker>
+By Jerome Cornuau
+</movie_maker>
+		<actors>
 With C. Cornillac, D. Kruger, E Baer
-</actor>
-		<year-production>
+</actors>
+		<year_of_production>
 Year: 2005 
-</year-production>
-					<description>
-						<text>
-							About the adventures of commissar Valentin and inspectors Terrasson and Pujol,
-							members of the " Brigades mobiles", special squad of the French police before
-							the first world war..
-						</text>
-						<production-time>
-							<date-list>
-								<date>
-									<Day>
-										Wednesday
-									</Day>
-									<time>
-										14:00
-									</time>
-									
-									<time>
-										16:40
-									</time>
-									
-									<time>
-										19:40
-									</time>
-									
-									<time>
-										22:10
-									</time>
-								</date>
-								<date>
-									<Day>
-										Satursday
-									</Day>
-									<time>
-										14:00
-									</time>
-									
-									<time>
-										16:40
-									</time>
-									
-									<time>
-										19:40
-									</time>
-									
-									<time>
-										22:10
-									</time>
-								</date>
-								<date>
-									<Day>
-										Tuesday
-									</Day>
-									<time>
-										14:00
-									</time>
-									<time>
-										19:40
-									</time>
-									
-									<time>
-										22:10
-									</time>
-								</date>
-								<date>
-									<Day>
-										Friday
-									</Day>
-									<time>
-										14:00
-									</time>
-									<time>
-										19:40
-									</time>
-									<time>
-										22:10
-									</time>
-								</date>
-								<date>
-									<Day>
-										Monday
-									</Day>
-									<time>
-										14:00
-									</time>																		
-									<time>
-										19:40
-									</time>
-									
-									<time>
-										22:10
-									</time>
-								</date>
-								<date>
-									<Day>
-										Thursday
-									</Day>
-									<time>
-										14:00
-									</time>
-
-									<time>
-										19:40
-									</time>
-									
-									<time>
-										22:10
-									</time>
-								</date>
-								<date>
-									<Day>
-										Sunday
-									</Day>
-									<time>
-										10:20
-									</time>
-									<time>
-										14:00
-									</time>
-									
-									<time>
-										19:40
-									</time>
-									
-									<time>
-										20:00
-									</time>
-								</date>
-							</date-list>
-
-						</production-time>
-						
-					</description>
-				</movie>			
-					
-		</movie-list>
-
+</year_of_production>
+		<language>
+VF (French)
+</language>
+		<description>
+			<text>
+				About the adventures of commissar Valentin and inspectors Terrasson and Pujol,
+				members of the " Brigades mobiles", special squad of the French police before
+				the first world war..
+			</text>
+			<projection_list>
+				<days>
+Wednesday
+</days>
+				<time>
+14:00
+</time>
+				<time>
+16:40
+</time>
+				<time>
+19:40
+</time>
+				<time>
+22:10
+</time>
+			</projection_list>
+			
+			<projection_list>
+				<days>
+Satursday
+</days>
+				<time>
+14:00
+</time>
+				<time>
+16:40
+</time>
+				<time>
+19:40
+</time>
+				<time>
+22:10
+</time>
+			</projection_list>
+			<projection_list>
+				<days>
+Tuesday
+</days>
+				<time>
+14:00
+</time>
+				<time>
+19:40
+</time>
+				<time>
+22:10
+</time>
+			</projection_list>
+			<projection_list>
+				<days>
+Friday
+</days>
+				<time>
+14:00
+</time>
+				<time>
+19:40
+</time>
+				<time>
+22:10
+</time>
+			</projection_list>
+			<projection_list>
+				<days>
+Monday
+</days>
+				<time>
+14:00
+</time>
+				<time>
+19:40
+</time>
+				<time>
+22:10
+</time>
+			</projection_list>
+			<projection_list>
+				<days>
+Thursday
+</days>
+				<time>
+14:00
+</time>
+		
+		<time>
+19:40
+</time>
+				<time>
+22:10
+</time>
+			</projection_list>
+			<projection_list>
+				<days>
+Sunday
+</days>
+				<time>
+10:20
+</time>
+				<time>
+14:00
+</time>
+				<time>
+19:40
+</time>
+				<time>
+20:00
+</time>
+			</projection_list>
+		</description>
+	</movie>
+	<movie title="Quantum of Solace" press_rating="3/5" spectator_rating="4/5"> 
+		<duration>
+( 1h 47min )
+</duration>
+		<kind>
+Spy
+</kind>
+		<movie_maker>
+By Marc Forster
+</movie_maker>
+		<actors>
+With Daniel Craig
+</actors>
+		<year_of_production>
+Year: 2008 
+</year_of_production>
+		<language>
+VF (French)
+</language>
+		<description>
+			<text>
+				Même s'il lutte pour ne pas faire de sa dernière mission une affaire personnelle,James Bond est décidé à traquer ceux qui ont forcé Vesper à le trahir.
+			</text>
+			<projection_list>
+				<days>
+Wednesday
+</days>
+				<time>
+15:30
+</time>
+			</projection_list>
+		</description>
+	</movie>
 	
+	<movie title="Avengers" press_rating="4/5" spectator_rating="4/5"> 
+		<duration>
+( 2h 12min )
+</duration>
+		<kind>
+Fantasy/Sci-fi</kind>
+		<movie_maker>
+By Joss Whedon</movie_maker>
+		<actors>
+With Scarlett Johansson</actors>
+		<year_of_production>
+Year: 2012 
+</year_of_production>
+		<language>
+VF (French)
+</language>
+		<description>
+			<text>
+				Nick Fury, le directeur du S.H.I.E.L.D., l'organisation qui préserve la paix dans le monde, veut former une équipe d'irréductibles pour empêcher la destruction du monde. Iron Man, Hulk, Thor, Captain America, Hawkeye et Black Widow répondent présents. La nouvelle équipe, baptisée Avengers, a beau sembler soudée, il reste encore à ses illustres membres à apprendre à travailler ensemble.
+			</text>
+			<projection_list>
+				<days>
+Wednesday
+</days>
+				<time>
+15:45</time>
+			</projection_list>
+		</description>
+	</movie>
 	
+	<movie title="Iron Man" press_rating="4/5" spectator_rating="4/5"> 
+		<duration>
+( 2h 06min )
+</duration>
+		<kind>Sci-fi/Thriller</kind>
+		<movie_maker>
+By Jon Favreau</movie_maker>
+		<actors>
+With Robert Downey Jr.
+</actors>
+		<year_of_production>
+Year: 2008 
+</year_of_production>
+		<language>
+VF (French)
+</language>
+		<description>
+			<text>
+				Tony Stark, inventeur de génie, vendeur d'armes et playboy milliardaire, est kidnappé en Aghanistan. Forcé par ses ravisseurs à fabriquer une arme redoutable, il construit en secret une armure high-tech révolutionnaire qu'il utilise pour s'échapper. Comprenant la puissance de cette armure, il décide de l'améliorer et de l'utiliser pour faire régner la justice et protéger les innocents.
+			</text>
+			<projection_list>
+				<days>
+Wednesday
+</days>
+				<time>
+16h10
+</time>
+			</projection_list>
+		</description>
+	</movie>
 	
-	</week>
-
+	<movie title="Iron Man" press_rating="3.5/5" spectator_rating="4/5"> 
+		<duration>
+( 2h 04min )
+</duration>
+		<kind>Sci-fi/Thriller</kind>
+		<movie_maker>
+By Joe Johnston</movie_maker>
+		<actors>
+With Chris Evans</actors>
+		<year_of_production>
+Year: 2011 
+</year_of_production>
+		<language>
+VF (French)
+</language>
+		<description>
+			<text>
+				Steve Rogers, frêle et timide, se porte volontaire pour participer à un programme expérimental qui va le transformer en un super soldat connu sous le nom de Captain America.
+			</text>
+			<projection_list>
+				<days>
+Wednesday
+</days>
+				<time>
+16h15
+</time>
+			</projection_list>
+		</description>
+	</movie>
 </cinema>
-</Cinema-list>

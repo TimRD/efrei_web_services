@@ -16,7 +16,7 @@
 
 
 <!ATTLIST movie
-         tittle      CDATA   #REQUIRED
+         title      CDATA   #REQUIRED
          press_rating  CDATA  #IMPLIED
          spectator_rating CDATA #IMPLIED
 >
