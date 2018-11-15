@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-
+	<xs:element  name="bank" type="bank"/>
+	
+	<xs:complexType name="bank">
+		<xs:sequence>
+			<xs:element name="accounts" type="accounts"/>
+			<xs:element name="customers" type="customers"/>
+			<xs:element name="customer_accounts" type="customer_accounts"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="accounts">
+		<xs:sequence>
+			<xs:element name="savings_accounts" type="savings_accounts" />
+			<xs:element name="checking_accounts" type="checking_accounts"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="customers">
+		<xs:sequence>
+			<xs:element name="customer" type="customer" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="customer_accounts">
+		<xs:sequence>
+			<xs:element name="customer_account" type="customer_account" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="savings_accounts">
+		<xs:sequence>
+			<xs:element name="savings_account" maxOccurs="unbounded">
+				<xs:complexType >
+					<xs:sequence>
+						<xs:element name="balance" type="xs:int"/>
+					</xs:sequence>
+					<xs:attribute name="id"/>
+					<xs:attribute name="interest"/>
+				</xs:complexType>
+				<xs:unique name="unique-id">
+					<xs:selector xpath="savings_account"/>
+					<xs:field xpath="@id"/>
+				</xs:unique>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="checking_accounts">
+		<xs:sequence>
+			<xs:element name="checking_account" type="checking_account" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="customer">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="id"/>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="customer_account">
+		<xs:simpleContent>
+			 <xs:extension base="xs:string">
+			 	<xs:attribute type="xs:string" name="c_id" use="required"/>
+			 	<xs:attribute type="xs:string" name="ac_id" use="required"/>
+			 </xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="checking_account">
+		<xs:sequence>
+			<xs:element name="balance" type="xs:int"/>
+		</xs:sequence>
+		<xs:attribute name="id"/>
+		<xs:attribute name="interest"/>
+	</xs:complexType>	
 </xs:schema>
