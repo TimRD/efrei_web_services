@@ -2,8 +2,7 @@
 
 <!-- New document created with EditiX at Wed Nov 14 22:36:39 CET 2018 -->
 
-<?xml version="1.0" encoding="utf-8"?>
-<book isbn="0836217462">
+<book isbn="0836217462" xsi:noNamespaceSchemaLocation="book.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<title>Being a Dog Is a Full-Time Job</title>
 	<author>Charles M. Schulz</author>
 	<character>
