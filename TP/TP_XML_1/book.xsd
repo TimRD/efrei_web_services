@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
 	  <xs:simpleType name="string40">
 		  <xs:restriction base="xs:string">
 			  <xs:maxLength value="40" />
 		  </xs:restriction>
 	  </xs:simpleType>
 
-
-
-	
-<xs:element  name="book" type="book"/>
+	<xs:element  name="book" type="book"/>
 	<xs:complexType name="book">
 		<xs:sequence>
-			
-
-<xs:element  name="title" type="string40"/>
-
-
-		
-
-
-	<xs:element  name="author" type="string40"/>
-		
-
-
-
-	<xs:element  name="character" type="character" maxOccurs="unbounded"/>
+			<xs:element  name="title" type="string40"/>
+			<xs:element  name="author" type="string40"/>
+			<xs:element  name="character" type="character" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="isbn">
 			<xs:simpleType>
@@ -35,29 +22,14 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
-		
 	</xs:complexType>
 	
 	<xs:complexType name="character">
 		<xs:sequence>
-			
-
-<xs:element  name="name" type="string40"/>
-		
-
-
-	<xs:element  name="friend-of" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
-
-		
-
-
-
-	<xs:element  name="since" type="xs:date"/>
-		
-
-
-
-	<xs:element  name="qualification" type="string40"/>
+			<xs:element  name="name" type="string40"/>
+			<xs:element  name="friend-of" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element  name="since" type="xs:date"/>
+			<xs:element  name="qualification" type="string40"/>
 		</xs:sequence>
 	</xs:complexType>
 	
