@@ -1,0 +1,7 @@
+https://spring.io/guides/gs/serving-web-content/
+https://stackoverflow.com/questions/39632667/how-to-kill-the-process-currently-using-a-port-on-localhost-in-windows
+
+netstat -ano | findstr :yourPortNumber (8080)
+taskkill /PID typeyourPIDhere /F  (à executer en mode admin)
+
+gradlew bootrun

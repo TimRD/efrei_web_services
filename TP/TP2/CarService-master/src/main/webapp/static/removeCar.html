@@ -1,0 +1,42 @@
+<html>
+<a href="index.html">Menu</a>
+<meta charset="ISO-8859-1">
+<h1>Remove a car</h1>
+<title>Remove a car</title>
+
+<form>
+    Plate number: <input id="plateNumberId" type="text" name="plateNumber" value="11AA22"><br><br>
+    <input type="button" value="Submit" onclick="removeCar()">
+</form>
+
+<script>
+function removeCar() {
+    /*
+    var text = document.getElementById("plateNumberId").value;
+    var plateNumber = JSON.parse(text);
+
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('DELETE', "http://localhost:8080/cars", true);
+    httpRequest.setRequestHeader("Content-type", "application/json");
+    httpRequest.send(JSON.stringify(plateNumber));
+    */
+
+    var text = '{"';
+    text += 'plateNumber":"' + document.getElementById("plateNumberId").value + '",'
+    text += '"brand":"no_brand",'
+    text += '"price":"0'
+    text+='"}'
+    var plateNumber = JSON.parse(text);
+
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('DELETE', "http://localhost:8080/cars", true);
+    httpRequest.setRequestHeader("Content-type", "application/json");
+    httpRequest.send(JSON.stringify(plateNumber));
+
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>Add a car</title>
+</head>
+<body>
+
+<a href="index.html">Menu</a>
+
+<h1>Add a car</h1>
+
+<form>
+  Plate number: <input id="plateNumberId" type="text" name="plateNumber" value="11AA22"><br>
+  Brand: <input id="brandId" type="text" name="brand" value="Ferrari"><br>
+  Price: <input id="priceId" type="text" name="price" value="1000"><br><br>
+  <input type="button" value="Submit" onclick="addCar()">
+</form> 
+
+<script>
+
+function addCar() {
+    var text = '{"';
+    text += 'plateNumber":"' + document.getElementById("plateNumberId").value + '",'
+    text += '"brand":"' + document.getElementById("brandId").value + '",'
+    text += '"price":"' + document.getElementById("priceId").value + '"}'
+    
+    var car = JSON.parse(text); 
+    
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('POST', "http://localhost:8080/cars", true);
+    httpRequest.setRequestHeader("Content-type", "application/json");
+    httpRequest.send(JSON.stringify(car));
+
+
+    /*
+    //Methode 2
+    var value_plateNumberId=document.getElementById("plateNumberId").value;
+    var value_brandId=document.getElementById("brandId").value;
+    var value_priceId=document.getElementById("priceId").value;
+    url="cars";
+    $.ajax({
+			type:"POST",
+			url:url,
+			data:"plateNumberId="+value_plateNumberId+"&brandId="+value_brandId+"&priceId="+value_priceId,
+			datatype: "JSON",
+			success: function(rep)
+			{
+				alert("ok");
+			},
+			error: function (jqXHR, textStatus, errorThrown){alert(textStatus);},
+    });
+    */
+
+
+}
+</script>
+
+
+</body>
+</html>
