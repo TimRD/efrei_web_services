@@ -32,6 +32,7 @@ public class CarRentalService {
 		cars.add(car);
 	}
 
+
 	/*
 	//Methode 2
 	@RequestMapping(value = "/cars", method = RequestMethod.POST)
@@ -40,20 +41,20 @@ public class CarRentalService {
 			@RequestParam (value="plateNumberId", required = true) String plateNumberId,
 			@RequestParam (value="brandId", required = true) String brandId,
 			@RequestParam (value="priceId", required = true) String priceId) throws Exception {
-		System.out.println("ok");
 		Car c= new Car(plateNumberId,brandId,Integer.parseInt(priceId));
 		System.out.println(c);
 		cars.add(c);
 	}
 	*/
 
+
 	@RequestMapping(value= "/cars", method = RequestMethod.DELETE)
 	@ResponseStatus(HttpStatus.OK)
-	public void removeCar(@RequestBody Car ce) throws Exception
+	public void removeCar(@RequestBody String PlateNumber) throws Exception
 	{
 		for (Car c : cars)
 		{
-			if (c.getPlateNumber().equals(ce.getPlateNumber()))
+			if (c.getPlateNumber().equals(PlateNumber))
 				cars.remove(c);
 		}
 	}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <meta charset="ISO-8859-1">
 <title>Add a car</title>
 </head>
@@ -21,6 +21,7 @@
 <script>
 
 function addCar() {
+    //Methode 1
     var text = '{"';
     text += 'plateNumber":"' + document.getElementById("plateNumberId").value + '",'
     text += '"brand":"' + document.getElementById("brandId").value + '",'
@@ -32,7 +33,6 @@ function addCar() {
     httpRequest.open('POST', "http://localhost:8080/cars", true);
     httpRequest.setRequestHeader("Content-type", "application/json");
     httpRequest.send(JSON.stringify(car));
-
 
     /*
     //Methode 2
