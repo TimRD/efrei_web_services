@@ -10,7 +10,6 @@ import org.springframework.web.client.RestTemplate;
 public class CarRentalClient {
 	
 	private static final Logger log = LoggerFactory.getLogger(CarRentalClient.class);
-
 	public static void main(String[] args) {
 		
 		RestTemplate restTemplate = new RestTemplate();
