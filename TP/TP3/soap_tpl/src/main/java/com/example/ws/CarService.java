@@ -4,8 +4,9 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 
-@WebService
+
 @SOAPBinding(style = SOAPBinding.Style.RPC)
+@WebService
 public interface CarService
 {
     @WebMethod
@@ -16,4 +17,7 @@ public interface CarService
 
     @WebMethod
     boolean getBackCar(String plateNumber);
+
+    @WebMethod
+    void addCar(Car c);
 }

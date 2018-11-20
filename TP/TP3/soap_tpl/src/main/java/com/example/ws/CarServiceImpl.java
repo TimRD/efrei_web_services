@@ -6,6 +6,7 @@ import javax.xml.ws.WebServiceProvider;
 import java.util.ArrayList;
 import java.util.List;
 
+@WebService(endpointInterface = "com.example.ws.CarService")
 public class CarServiceImpl implements CarService
 {
     private List<Car> cars = new ArrayList<>();
@@ -53,5 +54,11 @@ public class CarServiceImpl implements CarService
             }
         }
         return false;
+    }
+
+    @Override
+    public void addCar(Car c)
+    {
+        cars.add(c);
     }
 }
