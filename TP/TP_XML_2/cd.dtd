@@ -1,0 +1,13 @@
+<!-- DTD created at Tue Nov 20 16:52:41 CET 2018 with EditiX. Please insert an encoding attribute header for converting any DTD  -->
+
+<!ELEMENT CDlist ((CD)+)>
+<!ELEMENT CD (composer, (performance)+,publisher, (length)?)>
+<!ELEMENT performance (composition, (soloist)?,(orchestra, conductor)?)>
+
+<!ELEMENT composer (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT composition (#PCDATA)>
+<!ELEMENT soloist (#PCDATA)>
+<!ELEMENT orchestra (#PCDATA)>
+<!ELEMENT conductor (#PCDATA)>

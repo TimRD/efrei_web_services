@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New document created with EditiX at Tue Nov 20 17:58:29 CET 2018 -->
+
+
+
+<!DOCTYPE CDlist SYSTEM "cd.dtd">
+<CDlist>
+	<CD>
+		<composer></composer>
+		<performance>
+			<composition></composition>
+			<soloist></soloist>
+			<orchestra>London Symphony</orchestra>
+			<conductor></conductor>
+		</performance>
+		<publisher>Deutsche</publisher>
+	</CD>
+</CDlist>
