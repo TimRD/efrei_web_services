@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- New document created with EditiX at Tue Nov 20 22:04:51 CET 2018 -->
+<?xml-stylesheet type="text/xsl"  href="breakfast_2.xsl"?>
 
 <breakfast_menu>
 	<food>
