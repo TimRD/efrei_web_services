@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e91de878-a8c0-4b21-914f-2844fd84cf1f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/soap_example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/soap_example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/ws/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/ws/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/example/ws/CarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/example/ws/CarServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/SoapClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/client/SoapClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/client/service/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/endpoint/ServicePublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/endpoint/ServicePublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ws/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ws/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ws/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ws/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/example/efrei/test/TestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/example/efrei/test/servicesWeb/MyServiceWeb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/com/example/efrei/test/servicesWeb/MyServiceWebImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/test/java/com/example/efrei/test/TestApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TP_XML_2/breakfast.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TP_XML_2/breakfast.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -42,10 +22,11 @@
     <session id="1331027805">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -75,7 +56,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -303,7 +284,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6170870818810" />
+        <entry key="$PROJECT_DIR$" value="6170530064779" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="754202287" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2007532874" />
@@ -440,7 +421,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="300" />
-    <option name="y" value="116" />
+    <option name="y" value="115" />
     <option name="width" value="1401" />
     <option name="height" value="1002" />
   </component>
@@ -450,6 +431,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -496,8 +479,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -580,9 +561,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1757085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -625,20 +606,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/com/example/ws/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/com/example/ws/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/com/example/ws/CarService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/com/example/ws/Car.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/Car.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -679,20 +648,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/CarService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/Car.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ws/CarServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -703,13 +660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/CarServiceImplService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/service/CarServiceImplService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/client/SoapClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">

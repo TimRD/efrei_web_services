@@ -5,33 +5,30 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:output method="html"/>
+	
 	<xsl:template match="/">
-	<html> 
-		<body> 
-			<h2>Breakfast</h2> 
-			<xsl:apply-templates/> 
-		</body> 
+	<html>
+		<body>
+				<table border="1">
+					<xsl:for-each select="breakfast_menu/food">
+					<div style="background-color:#009999">
+						<font color="white" >
+							 <b>
+								<xsl:value-of select="name"/> - 
+								<xsl:value-of select="price"/>
+							</b>
+						</font>
+					</div>
+					<div style="background-color:#d9d9d9">
+						<xsl:value-of select="description"/>
+						<xsl:value-of select="calories"/> (calories per serving)
+					</div>					
+					</xsl:for-each>
+				</table>
+		</body>
 	</html>
 	</xsl:template>
-	
-	<xsl:templatematch="food">
-	<p>
-		<xsl:apply-templates select="name"/> 
-		<xsl:apply-templates select="price"/>
-	</p>
-	</xsl:templatematch="food">
-			
-	<xsl:templatematch="name">
-		<span style="color:#ff0000"> 
-			<xsl:value-of select="."/>
-		</span>
-	</xsl:template>
-					
-	<xsl:templatematch="price">
-		<span style="color:#ff0000"> 
-			<xsl:value-of select="."/>
-		</span>
-	</xsl:template>
+
 </xsl:stylesheet>
 
 
