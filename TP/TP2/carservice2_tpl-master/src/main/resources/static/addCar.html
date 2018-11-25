@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<meta charset="ISO-8859-1">
-<title>Add a car</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>Add a car</title>
 </head>
 <body>
 
@@ -12,11 +12,11 @@
 <h1>Add a car</h1>
 
 <form>
-  Plate number: <input id="plateNumberId" type="text" name="plateNumber" value="11AA22"><br>
-  Brand: <input id="brandId" type="text" name="brand" value="Ferrari"><br>
-  Price: <input id="priceId" type="text" name="price" value="1000"><br><br>
-  <input type="button" value="Submit" onclick="addCar()">
-</form> 
+    Plate number: <input id="plateNumberId" type="text" name="plateNumber" value="11AA22"><br>
+    Brand: <input id="brandId" type="text" name="brand" value="Ferrari"><br>
+    Price: <input id="priceId" type="text" name="price" value="1000"><br><br>
+    <input type="button" value="Submit" onclick="addCar()">
+</form>
 
 <script>
 
@@ -26,9 +26,9 @@ function addCar() {
     text += 'plateNumber":"' + document.getElementById("plateNumberId").value + '",'
     text += '"brand":"' + document.getElementById("brandId").value + '",'
     text += '"price":"' + document.getElementById("priceId").value + '"}'
-    
-    var car = JSON.parse(text); 
-    
+
+    var car = JSON.parse(text);
+
     var httpRequest = new XMLHttpRequest();
     httpRequest.open('POST', "http://localhost:8080/cars", true);
     httpRequest.setRequestHeader("Content-type", "application/json");
