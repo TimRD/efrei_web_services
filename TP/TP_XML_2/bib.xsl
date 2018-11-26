@@ -12,11 +12,12 @@
 		<h1  align="left">Domaines</h1>
 			<xsl:for-each select="bib/domain">
 			<h2>
-				<font color="blue" >
-					<u>
-						<xsl:value-of select="title"/>
-					</u>
-				</font >
+			<xsl:element name="a">
+				<xsl:attribute name="href">
+					bib.xml#<xsl:value-of select="title"/>
+				</xsl:attribute>
+				<xsl:value-of select="title"/>
+			</xsl:element>
 			</h2>
 			</xsl:for-each>
 			<hr/>
@@ -64,13 +65,14 @@ Année : <xsl:value-of select="year"/>
 				
 
 Lien :
-				
-<font color="blue" >
-				<u>
-				<xsl:value-of select="weblink"/>
-				
-</u>
-				</font >
+
+<xsl:element name="a">
+	<xsl:attribute name="href">
+		<xsl:value-of select="weblink"/>
+	</xsl:attribute>
+	<xsl:value-of select="weblink"/>
+</xsl:element>
+
 				
 
 <br/>
